@@ -1,0 +1,36 @@
+{
+  "listen_host": "127.0.0.1",
+  "listen_port": 4546,
+  "rules": [
+    {
+      "host": "*.githubcopilot.com",
+      "port": 0,
+      "process": "*",
+      "interface": "default",
+      "note": "Copilot API"
+    },
+    {
+      "host": "copilot-proxy.githubusercontent.com",
+      "port": 0,
+      "process": "*",
+      "interface": "default",
+      "note": "Copilot 補全"
+    },
+    {
+      "host": "api.github.com",
+      "port": 0,
+      "process": "*",
+      "interface": "default",
+      "note": "GitHub API (Copilot 登入/聊天)"
+    },
+    {
+      "host": "google.com",
+      "port": 0,
+      "process": "*",
+      "interface": "default",
+      "note": "Google Search"
+    }
+  ],
+  "set_system_proxy": true,
+  "default_interface": "en0"
+}
